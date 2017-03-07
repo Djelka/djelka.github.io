@@ -11,7 +11,7 @@ body
 .phone
 {
 	margin:auto;
-	height:550px;
+	height:590px;
 	width:300px;
 	position:relative;
 	border:solid #000000 10px;
@@ -24,6 +24,7 @@ body
 {
 	background-color:#FFFFFF;	
 	height:400px;
+	margin-top:40px;
 	border:solid #000000 1px;
 }
 
@@ -54,4 +55,12 @@ body
 	position:absolute;
 	left:0%;
 	width:100%;
+}
+
+.phone-top div
+{
+	margin:auto;
+	height:5px;
+	width:70px;
+	background-color:#000000;
 }
