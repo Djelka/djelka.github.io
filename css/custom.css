@@ -26,6 +26,7 @@ body
 	height:400px;
 	margin-top:40px;
 	border:solid #000000 1px;
+	position:relative;
 }
 
 .home-button
@@ -63,4 +64,60 @@ body
 	height:5px;
 	width:70px;
 	background-color:#000000;
+}
+
+.wallpaper
+{
+	height:100%;
+	width:100%;
+	position:absolute;
+	top:0%;
+	left:0%;
+}
+
+.app
+{
+	position:absolute;
+	height:50px;
+	width:50px;
+}
+
+.app1
+{
+	margin-top:35px;
+}
+
+.app2
+{
+	margin-top:35px;
+	margin-left:80px;
+}
+
+.app3
+{
+	margin-top:35px;
+	margin-left:160px;
+}
+
+.app4
+{
+	margin-top:110px;
+}
+
+.app5
+{
+	margin-top:110px;
+	margin-left:80px;
+}
+
+.app span
+{
+	position:absolute;
+	height:50px;
+	width:50px;
+	background-color:#000000;
+	border-radius:10px;
+	border:solid #000000 1px;
+	text-align:center;
+	padding-top:10px;
 }
