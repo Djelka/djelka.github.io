@@ -31,20 +31,25 @@ body
 
 .screen-home
 {
-	display:none;
+	display:block;
 }
 
-.screen-call-1
-{
-
-}
-
-.screen-call-2
+.screen-app-call
 {
 	display:none;
 }
 
-.screen-call-3
+.screen-app-call-1
+{
+	display:none;
+}
+
+.screen-app-call-2
+{
+	display:none;
+}
+
+.screen-app-call-3
 {
 	display:none;
 }
@@ -218,7 +223,16 @@ body
 	margin-top:10px;
 	height:50px;
 	width:50px;
-	border:solid #000000 1px;
+	border:solid #FFFFFF 1px;
+	text-align:center;
+	cursor:pointer;
+}
+
+.menu-call-item span
+{
+	font-size:30px;
+	color:#FFFFFF;
+	padding-top:10px;
 }
 
 .menu-call-item-1
@@ -234,6 +248,42 @@ body
 .menu-call-item-3
 {
 	left:160px;
+}
+
+.numero-tool-item
+{
+	position:absolute;
+	height:40px;
+	width:40px;
+	text-align:center;
+	cursor:pointer;
+}
+
+.numero-tool-item-call
+{
+	background-color:#FE2E2E;
+	border-radius:100px;
+}
+
+.numero-tool-item span
+{
+	color:#FFFFFF;
+	padding-top:10px;
+}
+
+.numero-tool-item-1
+{
+	left:100px;
+	color:#FFFFFF;
+	font-size:20px;
+	margin-top:10px;
+}
+
+.numero-tool-item-2
+{
+	left:175px;
+	font-size:25px;
+	margin-top:7px;
 }
 
 .area-num
