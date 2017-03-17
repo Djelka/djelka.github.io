@@ -139,6 +139,12 @@ body
 	margin-left:80px;
 }
 
+.app6
+{
+	margin-top:110px;
+	margin-left:160px;
+}
+
 .app span
 {
 	position:absolute;
@@ -231,23 +237,26 @@ body
 .menu-call-item span
 {
 	font-size:30px;
-	color:#FFFFFF;
 	padding-top:10px;
 }
 
 .menu-call-item-1
 {
 	left:30px;
+	color:#FFFFFF;
 }
 
 .menu-call-item-2
 {
 	left:95px;
+	color:#FFFFFF;
 }
 
 .menu-call-item-3
 {
 	left:160px;
+	color:#000000;
+	background-color:#FF8000;
 }
 
 .numero-tool-item
@@ -261,7 +270,7 @@ body
 
 .numero-tool-item-call
 {
-	background-color:#FE2E2E;
+	background-color:#0B6121;
 	border-radius:100px;
 }
 
@@ -435,4 +444,42 @@ body
 	color:#0B4C5F;
 	font-size:12px;
 	padding-left:5px;
+}
+
+.screen-app-contact
+{
+	display:none;
+	overflow-y:scroll;
+}
+
+.screen-app-contact h4
+{
+	color:#0B6121;
+}
+
+.contact-row
+{
+	background-color:#D8D8D8;
+	height:40px;
+	width:100%;
+	margin-top:5px;
+	position:relative;
+	padding-top:5px;
+	font-size:20px;
+}
+
+.contact-row-msg
+{
+	position:absolute;
+	color:#FF8000;
+	top:10px;
+	right:40px;
+}
+
+.contact-row-call
+{
+	position:absolute;
+	color:#0B6121;
+	top:10px;
+	right:10px;
 }

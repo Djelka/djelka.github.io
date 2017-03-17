@@ -35,14 +35,34 @@ $(document).ready(function()
 		$(this).css("background-color", "#FFFFFF");
 	});
 	
-	$(".menu-call-item").mouseenter(function()
+	$(".menu-call-item-1").mouseenter(function()
 	{
 		$(this).css("background-color", "#0B6121");
 	});
 
-	$(".menu-call-item").mouseleave(function()
+	$(".menu-call-item-1").mouseleave(function()
 	{
 		$(this).css("background-color", "#088A29");
+	});
+
+	$(".menu-call-item-2").mouseenter(function()
+	{
+		$(this).css("background-color", "#0B6121");
+	});
+
+	$(".menu-call-item-2").mouseleave(function()
+	{
+		$(this).css("background-color", "#088A29");
+	});
+
+	$(".menu-call-item-3").mouseenter(function()
+	{
+		$(this).css("background-color", "#B45F04");
+	});
+
+	$(".menu-call-item-3").mouseleave(function()
+	{
+		$(this).css("background-color", "#FF8000");
 	});
 
 	$(".menu-call-item").click(function()
@@ -59,19 +79,20 @@ $(document).ready(function()
 		}
 		if($(this).hasClass("menu-call-item-3"))
 		{
+			$(".screen").css("display", "none");
 			$(".screen-app-call-all").css("display", "none");
-			$(".screen-app-call-3").css("display", "block");
+			$(".screen-app-contact").css("display", "block");
 		}
 	});
 
 	$(".numero-tool-item-1").mouseenter(function()
 	{
-		$(".numero-tool-item-call").css("background-color", "#B40404");
+		$(".numero-tool-item-call").css("background-color", "#0B3B17");
 	});
 
 	$(".numero-tool-item-1").mouseleave(function()
 	{
-		$(".numero-tool-item-call").css("background-color", "#FE2E2E");
+		$(".numero-tool-item-call").css("background-color", "#0B6121");
 	});
 
 	$(".numero-tool-item-2").click(function()
@@ -88,5 +109,12 @@ $(document).ready(function()
 			numberLenght++;
 		}
 	});	
+
+	$(".app-contact").click(function()
+	{
+		$(".screen").css("display", "none");
+		$(".screen-app-call-all").css("display", "none");
+		$(".screen-app-contact").css("display", "block");
+	});
 
 });
