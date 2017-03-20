@@ -14,6 +14,23 @@ $(document).ready(function()
 		$(".screen-app-call").css("display", "block");
 		$(".screen-app-call-1").css("display", "block");
 	});
+	
+	$(".app-settings").click(function()
+	{
+		$(".screen").css("display", "none");
+		$(".screen-app-settings").css("display", "block");
+		$(".screen-app-settings-1").css("display", "block");
+	});
+
+	$(".setting-row").mouseenter(function()
+	{
+		$(this).css("background-color", "#D8D8D8");
+	});
+	
+	$(".setting-row").mouseleave(function()
+	{
+		$(this).css("background-color", "#FFFFFF");
+	});
 
 	$(".app").mouseenter(function()
 	{
@@ -115,6 +132,103 @@ $(document).ready(function()
 		$(".screen").css("display", "none");
 		$(".screen-app-call-all").css("display", "none");
 		$(".screen-app-contact").css("display", "block");
+	});
+
+	$(".setting-row-wallpaper").click(function()
+	{
+		$(".screen").css("display", "none");
+		$(".screen-app-settings").css("display", "none");
+		$(".screen-app-settings-wallpaper").css("display", "block");
+	});
+
+	$(".wallpapers").click(function()
+	{
+		$(".wallpapers").css("border", "none");
+		$(this).css("border", "solid #0B6121 5px");
+		
+		var selectedWall = $(this).children(".selectedWall").val();
+
+		$(".wallpaper-home").remove();
+		$(".screen-home").append('<img src="./img/'+selectedWall+'.jpeg" class="wallpaper-home" />');
+	});
+
+	$(".setting-row-network").click(function()
+	{
+		$(".screen").css("display", "none");
+		$(".screen-app-settings").css("display", "none");
+		$(".screen-app-settings-network").css("display", "block");
+	});
+
+	$(".network-row").click(function()
+	{
+		var selectedNet = $(this).children(".selectedNet").val();
+		if ($(this).hasClass("network-row-open"))
+		{
+			$(".opacity-div").css("display", "block");	
+			$(".modal-craft-open").css("display", "block");	
+			$(".name-network").empty();	
+			$(".name-network").append(selectedNet);	
+			$(".name-network-input").val(selectedNet);
+		}
+		else
+		{
+			$(".opacity-div").css("display", "block");	
+			$(".modal-craft").css("display", "block");	
+			$(".name-network").empty();	
+			$(".name-network").append(selectedNet);	
+			$(".name-network-input").val(selectedNet);	
+		}
+	});
+
+	$(".opacity-div").click(function()
+	{
+		$(".opacity-div").css("display", "none");	
+		$(".modal-craft").css("display", "none");	
+		$(".modal-craft-open").css("display", "none");	
+	});
+
+	$(".code-button").click(function()
+	{
+		if ($(".code-area").val() == "1234" && $(".name-network-input").val() == "BOX-DF7310895")
+		{
+			$(".spot-df").css("color", "#0B6121");
+			$(".spot-df-lock").css("display", "none");
+			$(".indicator-wifi").css("display", "block");
+			$(".network-row-df").addClass("network-row-open");
+			$(".opacity-div").css("display", "none");	
+			$(".modal-craft").css("display", "none");	
+		}
+		if ($(".code-area").val() == "1234" && $(".name-network-input").val() == "HOTSPOT")
+		{
+			$(".spot-hotspot").css("color", "#0B6121");
+			$(".spot-hotspot-lock").css("display", "none");
+			$(".indicator-wifi").css("display", "block");
+			$(".network-row-hotspot").addClass("network-row-open");
+			$(".opacity-div").css("display", "none");	
+			$(".modal-craft").css("display", "none");	
+		}
+if ($(".code-area").val() == "1234" && $(".name-network-input").val() == "BOX-CHRISTINE")
+		{
+			$(".spot-christine").css("color", "#0B6121");
+			$(".spot-christine-lock").css("display", "none");
+			$(".indicator-wifi").css("display", "block");
+			$(".network-row-christine").addClass("network-row-open");
+			$(".opacity-div").css("display", "none");	
+			$(".modal-craft").css("display", "none");	
+		}
+if ($(".code-area").val() == "1234" && $(".name-network-input").val() == "H4CK ME IF U CAN !")
+		{
+			$(".spot-h4ck").css("color", "#0B6121");
+			$(".spot-h4ck-lock").css("display", "none");
+			$(".indicator-wifi").css("display", "block");
+			$(".network-row-h4ck").addClass("network-row-open");
+			$(".opacity-div").css("display", "none");	
+			$(".modal-craft").css("display", "none");	
+		}
+		else
+		{
+			$(".code-area").val("Mot de pass incorrect");
+		}
 	});
 
 });

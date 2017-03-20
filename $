@@ -506,6 +506,7 @@ body
 .screen-app-settings-network
 {
 	display:none;
+	overflow-y:scroll;
 	padding-top:30px;
 }
 
@@ -584,29 +585,6 @@ body
 	cursor:pointer;
 }
 
-.network-row-open
-{
-	background-color:#FFFFFF;
-	height:40px;
-	width:100%;
-	position:relative;
-	padding-top:5px;
-	font-size:15px;
-	border-bottom:solid #D8D8D8 1px;
-}
-
-.network-row
-{
-	background-color:#FFFFFF;
-	height:40px;
-	width:100%;
-	position:relative;
-	padding-top:5px;
-	font-size:15px;
-	border-bottom:solid #D8D8D8 1px;
-	cursor:pointer;
-}
-
 .network-disabled-row
 {
 	background-color:#FFFFFF;
@@ -616,19 +594,11 @@ body
 	padding-top:5px;
 	font-size:15px;
 	border-bottom:solid #D8D8D8 1px;
-	cursor:pointer;
+	cursor:pointecon glyphicon-glober;
 	color:#D8D8D8;
 }
 
-.network-row-lock
-{
-	position:absolute;
-	color:#000000;
-	top:10px;
-	right:30px;
-}
-
-.network-row-network
+.network-row span
 {
 	position:absolute;
 	color:#000000;
@@ -647,42 +617,21 @@ body
 .opacity-div
 {
 	background-color:#000000;
-	opacity:0.8;
+	opacity:0.7;
 	position:absolute;
 	height:100%;
 	width:100%;
-	z-index:2;
-	top:0%;
-	left:0%;
-	display:none;
+	z-index:3;
 }
 
 .modal-craft
 {
 	position:absolute;
-	height:200px;
-	width:220px;
-	left:10px;
-	padding:10px;
-	text-align:center;
-	top:30px;
+	height:90%;
+	width:90%;
+	left:5%;
+	text-align:left;
+	top:5%;
 	background-color:#FFFFFF;
-	z-index:3;
-	display:none;
-	box-shadow: 0px 5px 5px 0px #656565;
-}
-
-.modal-craft-open
-{
-	position:absolute;
-	height:200px;
-	width:220px;
-	left:10px;
-	padding:10px;
-	text-align:center;
-	top:30px;
-	background-color:#FFFFFF;
-	z-index:3;
-	display:none;
-	box-shadow: 0px 5px 5px 0px #656565;
+	z-index:4;
 }
