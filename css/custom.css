@@ -177,7 +177,6 @@ body
 .indicator-msg
 {
 	left:5px;
-	display:none;
 }
 
 .indicator-hour
@@ -203,6 +202,7 @@ body
 	width:15px;
 	color:#FFFFFF;
 	cursor:pointer;
+	z-index:3
 }
 
 .change-screen-1
@@ -245,21 +245,9 @@ body
 
 .menu-call-item-1
 {
-	left:30px;
-	color:#FFFFFF;
-}
-
-.menu-call-item-2
-{
 	left:95px;
-	color:#FFFFFF;
-}
-
-.menu-call-item-3
-{
-	left:160px;
 	color:#000000;
-	background-color:#FF8000;
+	background-color:#FF8000
 }
 
 .numero-tool-item
@@ -474,20 +462,13 @@ body
 	font-size:20px;
 }
 
-.contact-row-msg
+.contact-row-king
 {
 	position:absolute;
-	color:#FF8000;
-	top:10px;
-	right:40px;
-}
-
-.contact-row-call
-{
-	position:absolute;
-	color:#0B6121;
+	color:#000000;
 	top:10px;
 	right:10px;
+	display:none;
 }
 
 .screen-app-settings
@@ -617,7 +598,7 @@ body
 	font-size:15px;
 	border-bottom:solid #D8D8D8 1px;
 	cursor:pointer;
-	color:#D8D8D8;
+	color:#666;
 }
 
 .network-row-lock
@@ -685,4 +666,72 @@ body
 	z-index:3;
 	display:none;
 	box-shadow: 0px 5px 5px 0px #656565;
+}
+
+.info-title
+{
+	height:70px;
+	position:absolute;
+	width:100%;
+	left:0%;
+	top:0%;
+	padding:12px;
+}
+
+.screen-app-msg
+{
+	display:none;
+	overflow-y:scroll;
+}
+
+.screen-app-msg-view
+{
+	display:none;
+	overflow-y:scroll;
+}
+
+.msg-row
+{
+	height:80px;
+	width:100%;
+	padding:5px;
+	margin-top:5px;
+	position:relative;
+	border-bottom:solid #D8D8D8 1px;
+	cursor:pointer;
+}
+
+.msg-row h3
+{
+	font-size:20px;
+}
+
+.msg-row p
+{
+	font-size:13px;
+}
+
+.msg-row span
+{
+	color:#666;
+}
+
+.msg-down
+{
+	background-color:#FF8000;
+	color:#000000;
+	height:auto;
+	border-radius:10px;
+	border:solid #000000 1px;
+	padding:5px;
+}
+
+.msg-up
+{
+	background-color:#01A9DB;
+	color:#000000;
+	height:auto;
+	border-radius:10px;
+	border:solid #000000 1px;
+	padding:5px;
 }

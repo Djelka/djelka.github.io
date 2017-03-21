@@ -1,6 +1,7 @@
 $(document).ready(function()
 {
 	numberLenght = 0;
+	msgIndicator1 = 1;
 
 	$(".home-button").click(function()
 	{
@@ -54,52 +55,19 @@ $(document).ready(function()
 	
 	$(".menu-call-item-1").mouseenter(function()
 	{
-		$(this).css("background-color", "#0B6121");
+		$(this).css("background-color", "#B45F04");
 	});
 
 	$(".menu-call-item-1").mouseleave(function()
 	{
-		$(this).css("background-color", "#088A29");
-	});
-
-	$(".menu-call-item-2").mouseenter(function()
-	{
-		$(this).css("background-color", "#0B6121");
-	});
-
-	$(".menu-call-item-2").mouseleave(function()
-	{
-		$(this).css("background-color", "#088A29");
-	});
-
-	$(".menu-call-item-3").mouseenter(function()
-	{
-		$(this).css("background-color", "#B45F04");
-	});
-
-	$(".menu-call-item-3").mouseleave(function()
-	{
 		$(this).css("background-color", "#FF8000");
 	});
 
-	$(".menu-call-item").click(function()
+	$(".menu-call-item-1").click(function()
 	{
-		if($(this).hasClass("menu-call-item-1"))
-		{
-			$(".screen-app-call-all").css("display", "none");
-			$(".screen-app-call-1").css("display", "block");
-		}
-		if($(this).hasClass("menu-call-item-2"))
-		{
-			$(".screen-app-call-all").css("display", "none");
-			$(".screen-app-call-2").css("display", "block");
-		}
-		if($(this).hasClass("menu-call-item-3"))
-		{
-			$(".screen").css("display", "none");
-			$(".screen-app-call-all").css("display", "none");
-			$(".screen-app-contact").css("display", "block");
-		}
+		$(".screen").css("display", "none");
+		$(".screen-app-call-all").css("display", "none");
+		$(".screen-app-contact").css("display", "block");
 	});
 
 	$(".numero-tool-item-1").mouseenter(function()
@@ -132,6 +100,12 @@ $(document).ready(function()
 		$(".screen").css("display", "none");
 		$(".screen-app-call-all").css("display", "none");
 		$(".screen-app-contact").css("display", "block");
+	});
+
+	$(".app-msg").click(function()
+	{
+		$(".screen").css("display", "none");
+		$(".screen-app-msg").css("display", "block");
 	});
 
 	$(".setting-row-wallpaper").click(function()
@@ -198,16 +172,7 @@ $(document).ready(function()
 			$(".opacity-div").css("display", "none");	
 			$(".modal-craft").css("display", "none");	
 		}
-		if ($(".code-area").val() == "1234" && $(".name-network-input").val() == "HOTSPOT")
-		{
-			$(".spot-hotspot").css("color", "#0B6121");
-			$(".spot-hotspot-lock").css("display", "none");
-			$(".indicator-wifi").css("display", "block");
-			$(".network-row-hotspot").addClass("network-row-open");
-			$(".opacity-div").css("display", "none");	
-			$(".modal-craft").css("display", "none");	
-		}
-if ($(".code-area").val() == "1234" && $(".name-network-input").val() == "BOX-CHRISTINE")
+		if ($(".code-area").val() == "1234" && $(".name-network-input").val() == "BOX-CHRISTINE")
 		{
 			$(".spot-christine").css("color", "#0B6121");
 			$(".spot-christine-lock").css("display", "none");
@@ -216,7 +181,7 @@ if ($(".code-area").val() == "1234" && $(".name-network-input").val() == "BOX-CH
 			$(".opacity-div").css("display", "none");	
 			$(".modal-craft").css("display", "none");	
 		}
-if ($(".code-area").val() == "1234" && $(".name-network-input").val() == "H4CK ME IF U CAN !")
+		if ($(".code-area").val() == "1234" && $(".name-network-input").val() == "H4CK ME IF U CAN !")
 		{
 			$(".spot-h4ck").css("color", "#0B6121");
 			$(".spot-h4ck-lock").css("display", "none");
@@ -228,6 +193,46 @@ if ($(".code-area").val() == "1234" && $(".name-network-input").val() == "H4CK M
 		else
 		{
 			$(".code-area").val("Mot de pass incorrect");
+		}
+	});
+
+	$(".msg-row").mouseenter(function()
+	{
+		$(this).css("background-color", "#D8D8D8");
+	});
+	
+	$(".msg-row").mouseleave(function()
+	{
+		$(this).css("background-color", "#FFFFFF");
+	});
+
+	$(".msg-row").click(function()
+	{
+		if ($(this).hasClass("msg-view-1"))
+		{
+			if (msgIndicator1 == 1)
+			{
+				$(".indicator-msg").css("display", "none");
+				$(".msg-1").css("color", "#666");
+				msgIndicator1 = 0;
+			}
+			$(".screen").css("display", "none");
+			$(".screen-app-msg-view-1").css("display", "block");
+		}
+		if ($(this).hasClass("msg-view-2"))
+		{
+			$(".screen").css("display", "none");
+			$(".screen-app-msg-view-2").css("display", "block");
+		}
+		if ($(this).hasClass("msg-view-3"))
+		{
+			$(".screen").css("display", "none");
+			$(".screen-app-msg-view-3").css("display", "block");
+		}
+		if ($(this).hasClass("msg-view-4"))
+		{
+			$(".screen").css("display", "none");
+			$(".screen-app-msg-view-4").css("display", "block");
 		}
 	});
 
