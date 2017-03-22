@@ -129,27 +129,43 @@
 	margin-left:80px;
 }
 
-.app3
+.app4
 {
 	margin-top:35px;
 	margin-left:160px;
 }
 
-.app4
-{
-	margin-top:110px;
-}
-
 .app5
 {
-	margin-top:110px;
-	margin-left:80px;
+	margin-top:120px;
 }
 
 .app6
 {
-	margin-top:110px;
+	margin-top:120px;
+	margin-left:80px;
+}
+
+.app7
+{
+	margin-top:120px;
 	margin-left:160px;
+	display:none;
+}
+
+.app8
+{
+	margin-top:205px;
+	display:none;
+}
+
+.app .classicText
+{
+	position:absolute;
+	color:#000000;
+	top:55px;
+	text-align:center;
+	font-size:11px;
 }
 
 .app span
@@ -739,4 +755,99 @@
 	border-radius:10px;
 	border:solid #000000 1px;
 	padding:5px;
+}
+
+.screen-app-store
+{
+	display:none;
+	overflow-y:scroll;
+}
+
+.store-row
+{
+	height:80px;
+	border-bottom:solid #D8D8D8 1px;
+}
+
+.app-store
+{
+	position:absolute;
+	height:60px;
+	width:60px;
+	border-radius:10px;
+	border:solid #000000 1px;
+	text-align:center;
+	left:0px;
+	top:10px;
+}
+
+.app-store span
+{
+	font-size:40px;
+	top:10px;
+	left:10px;
+	position:absolute;
+	color:#3B240B;
+}
+
+.star-note
+{
+	position:absolute;
+	left:75px;
+	top:8px;
+	width:100px;
+	height:20px;
+}
+
+.short-desc
+{
+	position:absolute;
+	left:75px;
+	top:28px;
+	height:20px;
+	width:100px;
+	font-size:11px;
+}
+
+.download
+{
+	height:20px;
+	left:75px;
+	top:48px;
+	width:100px;
+	background-color:#380B61;
+	text-align:center;
+	font-size:12px;
+	position:absolute;
+	color:#FFFFFF;
+	cursor:pointer;
+	padding-top:1px;
+}
+
+.opacity-div-store
+{
+	background-color:#000000;
+	opacity:0.8;
+	position:absolute;
+	height:100%;
+	width:100%;
+	z-index:2;
+	top:0%;
+	left:0%;
+	display:none;
+}
+
+.modal-craft-store
+{
+	position:absolute;
+	height:200px;
+	width:220px;
+	left:10px;
+	padding:10px;
+	text-align:center;
+	top:30px;
+	background-color:#FFFFFF;
+	z-index:3;
+	display:none;
+	box-shadow: 0px 5px 5px 0px #656565;
 }

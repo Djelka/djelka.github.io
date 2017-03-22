@@ -121,9 +121,17 @@ $(document).ready(function()
 		$(this).css("border", "solid #0B6121 5px");
 		
 		var selectedWall = $(this).children(".selectedWall").val();
+		if (selectedWall == "wallpaper-1")
+		{
+			$(".app .classicText").css("color", "#000000");
+		}
+		else
+		{
+			$(".app .classicText").css("color", "#FFFFFF");
+		}
 
 		$(".wallpaper-home").remove();
-		$(".screen-home").append('<img src="./img/'+selectedWall+'.jpeg" class="wallpaper-home" />');
+		$(".screen-home").append('<img src="./img/'+selectedWall+'.jpg" class="wallpaper-home" />');
 	});
 
 	$(".setting-row-network").click(function()
@@ -131,6 +139,12 @@ $(document).ready(function()
 		$(".screen").css("display", "none");
 		$(".screen-app-settings").css("display", "none");
 		$(".screen-app-settings-network").css("display", "block");
+	});
+
+	$(".app-shop").click(function()
+	{
+		$(".screen").css("display", "none");
+		$(".screen-app-store").css("display", "block");
 	});
 
 	$(".network-row").click(function()
@@ -229,11 +243,23 @@ $(document).ready(function()
 			$(".screen").css("display", "none");
 			$(".screen-app-msg-view-3").css("display", "block");
 		}
-		if ($(this).hasClass("msg-view-4"))
+	});
+
+	$(".download").click(function()
+	{
+		$(".opacity-div-store").css("display", "block");
+		$(".modal-craft-store").css("display", "block");
+		if ($(this).hasClass("download-memo"))
 		{
-			$(".screen").css("display", "none");
-			$(".screen-app-msg-view-4").css("display", "block");
+			$(".name-app-store").append("Mémo");
 		}
+
+	});
+
+	$(".opacity-div-store").click(function()
+	{
+		$(".opacity-div-store").css("display", "none");	
+		$(".modal-craft-store").css("display", "none");	
 	});
 
 });
