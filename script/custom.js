@@ -247,19 +247,32 @@ $(document).ready(function()
 
 	$(".download").click(function()
 	{
-		$(".opacity-div-store").css("display", "block");
-		$(".modal-craft-store").css("display", "block");
-		if ($(this).hasClass("download-memo"))
-		{
-			$(".name-app-store").append("Mémo");
+		if (!$(this).hasClass("download-done"))
+		{ 
+			$(".name-app-store").empty();
+			$(".opacity-div-store").css("display", "block");
+			$(".modal-craft-store").css("display", "block");
+			if ($(this).hasClass("download-memo"))
+			{
+				$(".name-app-store").append("Mémo");
+				$(".describe-app-store").append("N'oubliez plus rien grâce à l'application Mémo !");
+			}
 		}
+	});
 
+	$(".download-button-memo").click(function()
+	{
+		$(".download-memo").addClass("download-done");
+		$(".download-memo").empty();
+		$(".download-memo").append("Téléchargé <span class='glyphicon glyphicon-ok'></span>");
+		$(".opacity-div-store").css("display", "none");	
+		$(".modal-craft-store").css("display", "none");	
 	});
 
 	$(".opacity-div-store").click(function()
 	{
 		$(".opacity-div-store").css("display", "none");	
-		$(".modal-craft-store").css("display", "none");	
+		$(".modal-craft-store").css("display", "none");y	
 	});
 
 });
