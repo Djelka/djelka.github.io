@@ -131,7 +131,7 @@ $(document).ready(function()
 		}
 
 		$(".wallpaper-home").remove();
-		$(".screen-home").append('<img src="./img/'+selectedWall+'.jpg" class="wallpaper-home" />');
+		$(".screen-home").append('<img src="./img/phoneGame/'+selectedWall+'.jpg" class="wallpaper-home" />');
 	});
 
 	$(".setting-row-network").click(function()
